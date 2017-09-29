@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  ObjectCardViewController.swift
 //  Object Methology
 //
 //  Created by Timofey on 9/29/17.
@@ -8,13 +8,15 @@
 
 import Cocoa
 
-class FirstViewController: NSSplitViewController {
+class ObjectCardViewController: NSViewController, ObjectsTarget {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.wantsLayer = true
+        // Do view setup here.
+    }
+    
+    func provide(with objects: [Object]) {
         
-        viewController
     }
     
 }

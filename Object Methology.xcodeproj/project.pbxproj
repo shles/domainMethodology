@@ -10,6 +10,14 @@
 		96E23B931F7D95210077A4B5 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E23B921F7D95210077A4B5 /* WindowController.swift */; };
 		96E23B951F7D9B4C0077A4B5 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E23B941F7D9B4C0077A4B5 /* FirstViewController.swift */; };
 		96E23B971F7D9B650077A4B5 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E23B961F7D9B650077A4B5 /* SecondViewController.swift */; };
+		96E23B991F7DC3290077A4B5 /* ObjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E23B981F7DC3290077A4B5 /* ObjectsViewController.swift */; };
+		96E23B9D1F7DD5ED0077A4B5 /* ObjectCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E23B9C1F7DD5ED0077A4B5 /* ObjectCardViewController.swift */; };
+		96E23BA11F7DD66A0077A4B5 /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E23BA01F7DD66A0077A4B5 /* Object.swift */; };
+		96E23BA31F7DD6880077A4B5 /* ObjectSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E23BA21F7DD6880077A4B5 /* ObjectSource.swift */; };
+		96E23BA51F7DD8F30077A4B5 /* User.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96E23BA41F7DD8F30077A4B5 /* User.xib */; };
+		96E23BA71F7DDE020077A4B5 /* Car.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96E23BA61F7DDE020077A4B5 /* Car.xib */; };
+		96E23BA91F7DDE5A0077A4B5 /* CreditCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96E23BA81F7DDE5A0077A4B5 /* CreditCard.xib */; };
+		96E23BAB1F7DDE950077A4B5 /* Purchases.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96E23BAA1F7DDE950077A4B5 /* Purchases.xib */; };
 		96E4AA901F7D7D7C0025396A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E4AA8F1F7D7D7C0025396A /* AppDelegate.swift */; };
 		96E4AA941F7D7D7C0025396A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96E4AA931F7D7D7C0025396A /* Assets.xcassets */; };
 		96E4AA971F7D7D7C0025396A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E4AA951F7D7D7C0025396A /* Main.storyboard */; };
@@ -30,6 +38,14 @@
 		96E23B921F7D95210077A4B5 /* WindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
 		96E23B941F7D9B4C0077A4B5 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		96E23B961F7D9B650077A4B5 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		96E23B981F7DC3290077A4B5 /* ObjectsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectsViewController.swift; sourceTree = "<group>"; };
+		96E23B9C1F7DD5ED0077A4B5 /* ObjectCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectCardViewController.swift; sourceTree = "<group>"; };
+		96E23BA01F7DD66A0077A4B5 /* Object.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
+		96E23BA21F7DD6880077A4B5 /* ObjectSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectSource.swift; sourceTree = "<group>"; };
+		96E23BA41F7DD8F30077A4B5 /* User.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = User.xib; sourceTree = "<group>"; };
+		96E23BA61F7DDE020077A4B5 /* Car.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Car.xib; sourceTree = "<group>"; };
+		96E23BA81F7DDE5A0077A4B5 /* CreditCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreditCard.xib; sourceTree = "<group>"; };
+		96E23BAA1F7DDE950077A4B5 /* Purchases.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Purchases.xib; sourceTree = "<group>"; };
 		96E4AA8C1F7D7D7C0025396A /* Object Methology.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Object Methology.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96E4AA8F1F7D7D7C0025396A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96E4AA931F7D7D7C0025396A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -81,7 +97,15 @@
 			children = (
 				96E4AA8F1F7D7D7C0025396A /* AppDelegate.swift */,
 				96E23B941F7D9B4C0077A4B5 /* FirstViewController.swift */,
+				96E23BA01F7DD66A0077A4B5 /* Object.swift */,
+				96E23B981F7DC3290077A4B5 /* ObjectsViewController.swift */,
+				96E23BA21F7DD6880077A4B5 /* ObjectSource.swift */,
 				96E23B961F7D9B650077A4B5 /* SecondViewController.swift */,
+				96E23BAA1F7DDE950077A4B5 /* Purchases.xib */,
+				96E23BA81F7DDE5A0077A4B5 /* CreditCard.xib */,
+				96E23BA61F7DDE020077A4B5 /* Car.xib */,
+				96E23BA41F7DD8F30077A4B5 /* User.xib */,
+				96E23B9C1F7DD5ED0077A4B5 /* ObjectCardViewController.swift */,
 				96E4AA931F7D7D7C0025396A /* Assets.xcassets */,
 				96E4AA951F7D7D7C0025396A /* Main.storyboard */,
 				96E4AA981F7D7D7C0025396A /* Info.plist */,
@@ -185,6 +209,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				96E4AA941F7D7D7C0025396A /* Assets.xcassets in Resources */,
+				96E23BA91F7DDE5A0077A4B5 /* CreditCard.xib in Resources */,
+				96E23BA51F7DD8F30077A4B5 /* User.xib in Resources */,
+				96E23BA71F7DDE020077A4B5 /* Car.xib in Resources */,
+				96E23BAB1F7DDE950077A4B5 /* Purchases.xib in Resources */,
 				96E4AA971F7D7D7C0025396A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -203,10 +231,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96E23B991F7DC3290077A4B5 /* ObjectsViewController.swift in Sources */,
 				96E23B931F7D95210077A4B5 /* WindowController.swift in Sources */,
 				96E4AA901F7D7D7C0025396A /* AppDelegate.swift in Sources */,
+				96E23BA11F7DD66A0077A4B5 /* Object.swift in Sources */,
 				96E23B971F7D9B650077A4B5 /* SecondViewController.swift in Sources */,
+				96E23BA31F7DD6880077A4B5 /* ObjectSource.swift in Sources */,
 				96E23B951F7D9B4C0077A4B5 /* FirstViewController.swift in Sources */,
+				96E23B9D1F7DD5ED0077A4B5 /* ObjectCardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
