@@ -8,15 +8,17 @@
 
 import Cocoa
 
-class ObjectCardViewController: NSViewController, ObjectsTarget {
+class ObjectCardViewController: NSViewController, ObjectViewTarget {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do view setup here.
+        view.layer?.backgroundColor = NSColor.white.cgColor
     }
     
-    func provide(with objects: [Object]) {
-        
+    func publish(objectView: NSView) {
+        view.subviews.forEach{ $0.removeFromSuperview() }
+        view.addSubview(objectView)
+        objectView.frame = view.frame
     }
     
 }

@@ -14,7 +14,12 @@ class FirstViewController: NSSplitViewController {
         super.viewDidLoad()
         view.wantsLayer = true
         
-        viewController
+        childViewControllers
+            .flatMap{ $0 as? ObjectsViewController }
+            .first!
+            .objectViewTarget = childViewControllers
+                .flatMap{ $0 as? ObjectCardViewController }
+                .first!
     }
     
 }
