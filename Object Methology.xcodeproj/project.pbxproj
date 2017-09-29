@@ -14,6 +14,8 @@
 		96E4AA941F7D7D7C0025396A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96E4AA931F7D7D7C0025396A /* Assets.xcassets */; };
 		96E4AA971F7D7D7C0025396A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E4AA951F7D7D7C0025396A /* Main.storyboard */; };
 		96E4AAA21F7D7D7C0025396A /* Object_MethologyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E4AAA11F7D7D7C0025396A /* Object_MethologyTests.swift */; };
+		FD83AACD1F7DF105002C023E /* Untitled.mov in Resources */ = {isa = PBXBuildFile; fileRef = FD83AACC1F7DEF6E002C023E /* Untitled.mov */; };
+		FD83AACF1F7DF196002C023E /* Untitled2.gif in Resources */ = {isa = PBXBuildFile; fileRef = FD83AACE1F7DF190002C023E /* Untitled2.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		96E4AA9D1F7D7D7C0025396A /* Object MethologyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Object MethologyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96E4AAA11F7D7D7C0025396A /* Object_MethologyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Object_MethologyTests.swift; sourceTree = "<group>"; };
 		96E4AAA31F7D7D7C0025396A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD83AACC1F7DEF6E002C023E /* Untitled.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Untitled.mov; sourceTree = "<group>"; };
+		FD83AACE1F7DF190002C023E /* Untitled2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Untitled2.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 		96E4AA8E1F7D7D7C0025396A /* Object Methology */ = {
 			isa = PBXGroup;
 			children = (
+				FD83AACE1F7DF190002C023E /* Untitled2.gif */,
+				FD83AACC1F7DEF6E002C023E /* Untitled.mov */,
 				96E4AA8F1F7D7D7C0025396A /* AppDelegate.swift */,
 				96E23B941F7D9B4C0077A4B5 /* FirstViewController.swift */,
 				96E23B961F7D9B650077A4B5 /* SecondViewController.swift */,
@@ -184,6 +190,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD83AACF1F7DF196002C023E /* Untitled2.gif in Resources */,
+				FD83AACD1F7DF105002C023E /* Untitled.mov in Resources */,
 				96E4AA941F7D7D7C0025396A /* Assets.xcassets in Resources */,
 				96E4AA971F7D7D7C0025396A /* Main.storyboard in Resources */,
 			);
