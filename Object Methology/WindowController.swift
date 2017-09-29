@@ -15,8 +15,10 @@ class WindowController: NSWindowController {
     override func windowDidLoad() {
         super.windowDidLoad()
         
+        window?.isOpaque = false
+        window?.backgroundColor = NSColor(colorLiteralRed: 216, green: 216, blue: 216, alpha: 0.9)
+        
         contentViewController = firstVC
-
     }
     
     let firstVC: NSViewController = {

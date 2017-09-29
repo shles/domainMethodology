@@ -21,6 +21,7 @@ class ObjectsViewController: NSViewController, NSTableViewDelegate, NSTableViewD
         tableView.delegate = self
         
         tableView.headerView = NSTableHeaderView(frame: .zero)
+        tableView.selectionHighlightStyle = .none
     }
     
     override func viewDidAppear() {
@@ -49,7 +50,7 @@ class ObjectsViewController: NSViewController, NSTableViewDelegate, NSTableViewD
     }
     
     func tableView(_ tableView: NSTableView, heightOfRow row: Int) -> CGFloat {
-        return 30
+        return 40
     }
     
     func tableViewSelectionDidChange(_ notification: Notification) {
@@ -69,6 +70,15 @@ class ObjectsViewController: NSViewController, NSTableViewDelegate, NSTableViewD
         var views = NSArray()
         _ = NSNib(nibNamed: nibName, bundle: nil)?.instantiate(withOwner: nil, topLevelObjects: &views)
         objectViewTarget?.publish(objectView: views.filter{ $0 is NSView }[0] as! NSView)
+    }
+    
+    func tableView(_ tableView: NSTableView, shouldSelectRow row: Int) -> Bool {
+        tableView.selectedRowIndexes.map{ tableView.rowView(atRow: $0, makeIfNecessary: false) }
+            .forEach{ $0?.backgroundColor = .clear }
+        
+        let view = tableView.rowView(atRow: row, makeIfNecessary: false)
+        view?.backgroundColor = NSColor(colorLiteralRed: 216, green: 216, blue: 216, alpha: 0.61)
+        return true
     }
     
     

@@ -160,9 +160,9 @@
                                                                     </textFieldCell>
                                                                 </textField>
                                                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqx-3a-xpR">
-                                                                    <rect key="frame" x="18" y="11" width="41" height="18"/>
+                                                                    <rect key="frame" x="18" y="8" width="53" height="24"/>
                                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="FqW-Fx-4u7">
-                                                                        <font key="font" metaFont="system" size="14.5"/>
+                                                                        <font key="font" metaFont="system" size="20"/>
                                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                                     </textFieldCell>

@@ -9,7 +9,7 @@
 import Cocoa
 
 class TitlableCell: NSTableCellView {
-
+    
     @IBOutlet weak var titleLabel: NSTextField!
     override func draw(_ dirtyRect: NSRect) {
         super.draw(dirtyRect)
