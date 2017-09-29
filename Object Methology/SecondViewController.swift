@@ -33,7 +33,7 @@ class SecondViewController: NSViewController {
     
     override func viewDidAppear() {
 
-        let videoURL: URL = Bundle.main.url(forResource: "Untitled", withExtension: "mov")!
+        let videoURL: URL = Bundle.main.url(forResource: "vid", withExtension: "mov")!
         let player = AVPlayer.init(playerItem: AVPlayerItem.init(asset: AVAsset.init(url: videoURL)))
         playerLayer = AVPlayerLayer(player: player)
         playerLayer!.frame = self.view.bounds

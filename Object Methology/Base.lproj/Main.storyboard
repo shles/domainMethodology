@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -47,12 +47,12 @@
             <objects>
                 <windowController id="B8D-0N-5wS" customClass="WindowController" customModule="Object_Methology" customModuleProvider="target" sceneMemberID="viewController">
                     <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" unifiedTitleAndToolbar="YES"/>
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="1000" height="700"/>
+                        <rect key="contentRect" x="196" y="240" width="910" height="700"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
-                        <value key="minSize" type="size" width="1000" height="700"/>
-                        <value key="maxSize" type="size" width="1000" height="700"/>
+                        <value key="minSize" type="size" width="910" height="700"/>
+                        <value key="maxSize" type="size" width="910" height="700"/>
                         <toolbar key="toolbar" implicitIdentifier="73F0A9E9-D77B-4546-BC54-DAF39887833D" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="81C-Er-yH8">
                             <allowedToolbarItems>
                                 <toolbarItem implicitItemIdentifier="662378A2-E06A-40D1-B49C-4C7121D0E366" label="Custom View" paletteLabel="Custom View" id="B9W-GJ-P7n">
@@ -82,6 +82,9 @@
                                 <toolbarItem reference="zpF-F7-hBy"/>
                             </defaultToolbarItems>
                         </toolbar>
+                        <connections>
+                            <outlet property="delegate" destination="B8D-0N-5wS" id="fNo-ak-4Sb"/>
+                        </connections>
                     </window>
                     <connections>
                         <outlet property="segmentedControl" destination="iS9-Ym-OJg" id="mwS-3A-EJ8"/>
@@ -102,8 +105,12 @@
                     <splitView key="splitView" dividerStyle="thin" vertical="YES" id="7gC-xC-cbA">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <connections>
+                            <outlet property="delegate" destination="9aw-3N-oD4" id="qQX-l1-iRL"/>
+                        </connections>
                     </splitView>
                     <connections>
+                        <outlet property="splitView" destination="7gC-xC-cbA" id="NNJ-vC-p3y"/>
                         <segue destination="Ssf-Eq-7ad" kind="relationship" relationship="splitItems" id="AIN-Ap-y43"/>
                         <segue destination="RCY-7c-Ywv" kind="relationship" relationship="splitItems" id="enW-Jn-8yb"/>
                     </connections>
@@ -133,7 +140,7 @@
                                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                                             <color key="gridColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                                             <tableColumns>
-                                                <tableColumn width="85" minWidth="40" maxWidth="1000" id="Gs5-cZ-NqW">
+                                                <tableColumn identifier="" width="85" minWidth="40" maxWidth="1000" id="Gs5-cZ-NqW">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -150,7 +157,7 @@
                                                             <rect key="frame" x="1" y="1" width="85" height="40"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
-                                                                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dzu-z3-SWB">
+                                                                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dzu-z3-SWB">
                                                                     <rect key="frame" x="0.0" y="23" width="85" height="40"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                                     <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="NDA-BW-gTu">
@@ -159,7 +166,7 @@
                                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                                     </textFieldCell>
                                                                 </textField>
-                                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqx-3a-xpR">
+                                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gqx-3a-xpR">
                                                                     <rect key="frame" x="18" y="11" width="41" height="18"/>
                                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="FqW-Fx-4u7">
                                                                         <font key="font" metaFont="system" size="14.5"/>
