@@ -8,12 +8,18 @@
 
 import Cocoa
 
-class FirstViewController: NSViewController {
+class FirstViewController: NSSplitViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.wantsLayer = true
-        view.layer?.backgroundColor = NSColor.blue.cgColor
+        
+        childViewControllers
+            .flatMap{ $0 as? ObjectsViewController }
+            .first!
+            .objectViewTarget = childViewControllers
+                .flatMap{ $0 as? ObjectCardViewController }
+                .first!
     }
     
 }

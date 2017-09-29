@@ -3,6 +3,22 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "ObjectsViewController.tableViewSelectionDidChange(Notification) -&gt; ():ObjectsViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "String(describing: notification.object)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "FirstViewController.viewDidLoad() -&gt; ():FirstViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.childViewControllers">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "WindowController.click(Any) -&gt; ():WindowController.swift">
          <PersistentStrings>
             <PersistentString
