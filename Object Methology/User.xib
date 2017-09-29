@@ -27,10 +27,10 @@
                     <rect key="frame" x="20" y="519" width="440" height="5"/>
                 </box>
                 <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="Vi1-b7-ScQ">
-                    <rect key="frame" x="20" y="398" width="440" height="5"/>
+                    <rect key="frame" x="20" y="350" width="440" height="5"/>
                 </box>
                 <box boxType="custom" borderWidth="0.0" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="Opb-Bp-KmM">
-                    <rect key="frame" x="29" y="179" width="200" height="212"/>
+                    <rect key="frame" x="29" y="131" width="200" height="212"/>
                     <view key="contentView" id="yFL-Gj-uug">
                         <rect key="frame" x="0.0" y="0.0" width="200" height="212"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -155,8 +155,35 @@
                     <color key="fillColor" red="0.35686274509999999" green="0.72941176470000002" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
                 </box>
                 <stackView distribution="fill" orientation="vertical" alignment="centerX" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hpp-BX-8SR">
-                    <rect key="frame" x="29" y="466" width="176" height="40"/>
+                    <rect key="frame" x="29" y="418" width="176" height="88"/>
                     <subviews>
+                        <box boxType="custom" borderWidth="0.0" cornerRadius="6" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="ZJz-3B-UcR">
+                            <rect key="frame" x="0.0" y="48" width="176" height="40"/>
+                            <view key="contentView" id="crM-9K-XDr">
+                                <rect key="frame" x="0.0" y="0.0" width="176" height="40"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLK-Dp-7wV">
+                                        <rect key="frame" x="18" y="4" width="140" height="31"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Credit Card" id="76E-Vx-ukP">
+                                            <font key="font" metaFont="system" size="26"/>
+                                            <color key="textColor" name="highlightColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="OLK-Dp-7wV" firstAttribute="leading" secondItem="crM-9K-XDr" secondAttribute="leading" constant="20" id="0mz-KT-tX8"/>
+                                    <constraint firstItem="OLK-Dp-7wV" firstAttribute="centerX" secondItem="crM-9K-XDr" secondAttribute="centerX" id="9Rh-Wy-DrR"/>
+                                    <constraint firstAttribute="trailing" secondItem="OLK-Dp-7wV" secondAttribute="trailing" constant="20" id="Zoc-js-OeR"/>
+                                    <constraint firstItem="OLK-Dp-7wV" firstAttribute="centerY" secondItem="crM-9K-XDr" secondAttribute="centerY" id="bKo-6I-9dw"/>
+                                </constraints>
+                            </view>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="3mh-8r-Nli"/>
+                            </constraints>
+                            <color key="fillColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </box>
                         <box boxType="custom" borderWidth="0.0" cornerRadius="6" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="lo1-1f-zVV">
                             <rect key="frame" x="0.0" y="0.0" width="176" height="40"/>
                             <view key="contentView" id="g41-nd-HkQ">
@@ -165,7 +192,7 @@
                                 <subviews>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRo-N8-7NG">
                                         <rect key="frame" x="18" y="4" width="140" height="31"/>
-                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Credit Card" id="WCU-P1-Jid">
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Purchases" id="WCU-P1-Jid">
                                             <font key="font" metaFont="system" size="26"/>
                                             <color key="textColor" name="highlightColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -191,13 +218,15 @@
                     </constraints>
                     <visibilityPriorities>
                         <integer value="1000"/>
+                        <integer value="1000"/>
                     </visibilityPriorities>
                     <customSpacing>
+                        <real value="3.4028234663852886e+38"/>
                         <real value="3.4028234663852886e+38"/>
                     </customSpacing>
                 </stackView>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZaY-XW-4gh">
-                    <rect key="frame" x="23" y="406" width="159" height="40"/>
+                    <rect key="frame" x="23" y="358" width="159" height="40"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Interaction" id="Hav-wM-BaU">
                         <font key="font" metaFont="system" size="33"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
