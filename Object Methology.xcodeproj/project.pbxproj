@@ -24,7 +24,7 @@
 		96E4AAA21F7D7D7C0025396A /* Object_MethologyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E4AAA11F7D7D7C0025396A /* Object_MethologyTests.swift */; };
 		FD83AACD1F7DF105002C023E /* Untitled.mov in Resources */ = {isa = PBXBuildFile; fileRef = FD83AACC1F7DEF6E002C023E /* Untitled.mov */; };
 		FD83AACF1F7DF196002C023E /* Untitled2.gif in Resources */ = {isa = PBXBuildFile; fileRef = FD83AACE1F7DF190002C023E /* Untitled2.gif */; };
-		FD83AAD31F7E5D65002C023E /* vid.mov in Resources */ = {isa = PBXBuildFile; fileRef = FD83AAD21F7E5D60002C023E /* vid.mov */; };
+		FD83AAD51F7E5EB4002C023E /* vid2.mov in Resources */ = {isa = PBXBuildFile; fileRef = FD83AAD41F7E5EAE002C023E /* vid2.mov */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +59,7 @@
 		96E4AAA31F7D7D7C0025396A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD83AACC1F7DEF6E002C023E /* Untitled.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Untitled.mov; sourceTree = "<group>"; };
 		FD83AACE1F7DF190002C023E /* Untitled2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Untitled2.gif; sourceTree = "<group>"; };
-		FD83AAD21F7E5D60002C023E /* vid.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = vid.mov; sourceTree = "<group>"; };
+		FD83AAD41F7E5EAE002C023E /* vid2.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = vid2.mov; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +101,11 @@
 		96E4AA8E1F7D7D7C0025396A /* Object Methology */ = {
 			isa = PBXGroup;
 			children = (
+				FD83AAD41F7E5EAE002C023E /* vid2.mov */,
 				FD83AACE1F7DF190002C023E /* Untitled2.gif */,
 				FD83AACC1F7DEF6E002C023E /* Untitled.mov */,
 				96E4AA8F1F7D7D7C0025396A /* AppDelegate.swift */,
 				96E23B941F7D9B4C0077A4B5 /* FirstViewController.swift */,
-				FD83AAD21F7E5D60002C023E /* vid.mov */,
 				96E23B981F7DC3290077A4B5 /* ObjectsViewController.swift */,
 				96E23BAE1F7DEFB50077A4B5 /* TitlableCell.swift */,
 				96E23B961F7D9B650077A4B5 /* SecondViewController.swift */,
@@ -217,7 +217,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD83AAD31F7E5D65002C023E /* vid.mov in Resources */,
+				FD83AAD51F7E5EB4002C023E /* vid2.mov in Resources */,
 				FD83AACF1F7DF196002C023E /* Untitled2.gif in Resources */,
 				FD83AACD1F7DF105002C023E /* Untitled.mov in Resources */,
 				96E4AA941F7D7D7C0025396A /* Assets.xcassets in Resources */,
